@@ -14,7 +14,7 @@
  *
  *
  * @author Alejandro Sanchez
- * @date 05-02-2022
+ * @date 05-09-2022
  *
  */
 #ifndef __STATS_H__
@@ -23,32 +23,33 @@
 /* This function will print all the statistics of the array given*/
 /* @param unsigned char *ptr which is a pointer to the first place in memory of the array*/
 /* @return calculated statistics of given array*/
-double print_statistics(void);
+void print_statistics(unsigned char **ptr, unsigned int length);
 /* This function will simply print the array */
 /* @param unsigned char *ptr which is a pointer to the first place in memory of the array and length of array*/
 /* @return all values inside array*/
-int print_array(unsigned char *ptr, unsigned length);
+void print_array(unsigned char **ptr, unsigned int length);
 /* This function will find the median of the array*/
 /* @param unsigned char *ptr which is a pointer to the first place in memory of the array and length of array*/
 /* @return median of array*/
-double find_median(unsigned char *ptr, unsigned length);
+unsigned char find_median(unsigned char **ptr, unsigned int length);
 /* This function will find the mean of the given array*/
 /* @param unsigned char *ptr which is a pointer to the first place in memory of the array and length of array*/
 /* @return mean of given array*/
-double find_mean(unsigned char *ptr);
+unsigned char find_mean(unsigned char **ptr, unsigned int length);
 /* This function will find the maximum of the given array*/
 /* @param unsigned char *ptr which is a pointer to the first place in memory of the array and length of array*/
 /* @return max of given array*/
-double find_maximum(unsigned char *ptr);
+unsigned char find_maximum(unsigned char **ptr, unsigned int length);
 /* This function will find the minimum of the given array*/
 /* @param unsigned char *ptr which is a pointer to the first place in memory of the array and length of array*/
 /* @return min of given array*/
-double find_minimum(unsigned char *ptr);
+unsigned char find_minimum(unsigned char **ptr, unsigned int length);
 /* This function will sort the given array */
 /* @param unsigned char *ptr which is a pointer to the first place in memory of the array and length of array*/
 /* return sorted Array*/ 
-void sort_array(unsigned char *ptr);
+unsigned char* sort_array(unsigned char ptr[40]);
 
+int cmpfunc(const void *a, const void *b);
 /**
  * @brief <Add Brief Description of Function Here>
  *
